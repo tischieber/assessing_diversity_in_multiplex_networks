@@ -44,3 +44,8 @@ diversity(matrix(c(0,0.5,0.3,0.5,0,0.8,0.3,0.8,0),ncol=3))
 
 ## HIV Dataset
 
+The network consists of 1114 nodes replicated in 16 layers, being the nodes cellular genes and proteins that have been shown to interact with those encoded by HIV-1. Each layers results from the interactions shown by specific types of experimental assays. The data is obtained from BioGRID, a public database that archives and disseminates genetic and protein interactions from humans and model organisms (BioGRID Release 3.4.154, 2017).
+
+The data are freely provided via 
+
+Chatr-Aryamontri,  A. et  al. The  biogrid  interaction  database:  2017  update. Nucleic  acids  research 45, D369–D379  (2017).
