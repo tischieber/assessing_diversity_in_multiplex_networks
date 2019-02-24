@@ -57,30 +57,25 @@ return(d)
 }
 
 
+
 JS_l<-function(d,d1){
 
-n=sqrt(length(d))
+m=(d+d1)/2
 
-p=-d*log(d)
+d=-d*log(d)
 
-p[is.na(p)]=0
+d[is.na(d)]=0
 
-p1=colMeans(t(p))
+d1=-d1*log(d1)
 
-p=-d1*log(d1)
+d1[is.na(d1)]=0
 
-p[is.na(p)]=0
+m=-m*log(m)
 
-p2=colMeans(t(p))
+m[is.na(m)]=0
 
-p=-((d+d1)/2)*log((d+d1)/2)
 
-p[is.na(p)]=0
-
-pm=colMeans(t(p))
-
-return(sqrt((pm-0.5*(p1+p2))/log(2)))
-
+return(sqrt(colSums(t(m-(d+d1)/2))/log(2)))
 
 }
 
